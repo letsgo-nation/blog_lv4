@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
 
-public interface LikeRepository extends JpaRepository<Like, Integer> {
+public interface LikeRepository extends JpaRepository<Like, Long> {
 
     // User, Post에서 단건 조회하기
      Optional<Like> findByUserAndPost(User user, Post post);

@@ -25,4 +25,16 @@ public class LikeController {
     public LikeResponseDto deleteLikePost(@PathVariable Long id, @AuthenticationPrincipal UserDetailsImpl userDetails){
         return likeService.deleteLikePost(id, userDetails.getUser());
     }
+
+    // 댓글 Like Api
+    @PostMapping("/comment/like/{id}")
+    public LikeResponseDto likeComment(@PathVariable Long id, @AuthenticationPrincipal UserDetailsImpl userDetails) {
+        return likeService.likeComment(id, userDetails.getUser());
+    }
+
+    // 댓글 Like 취소 API
+    @DeleteMapping("/comment/like/{id}")
+    public LikeResponseDto deleteLikeComment(@PathVariable Long id, @AuthenticationPrincipal UserDetailsImpl userDetails){
+        return likeService.deleteLikeComment(id, userDetails.getUser());
+    }
 }
