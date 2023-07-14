@@ -1,4 +1,4 @@
-# API 명세어
+# API 명세서
 https://www.notion.so/a3d9ec45e47e4c9d8084e57f9627fcc7?v=efa1f8fd279c4511ae0a08c2efc477b3&pvs=4
 
 # 질의 응답
